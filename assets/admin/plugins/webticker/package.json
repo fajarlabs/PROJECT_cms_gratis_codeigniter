@@ -1,0 +1,100 @@
+{
+  "_args": [
+    [
+      "webticker",
+      "/opt/lampp/htdocs/sucofindo/assets/admin/plugins"
+    ]
+  ],
+  "_from": "webticker@latest",
+  "_id": "webticker@3.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/webticker",
+  "_nodeVersion": "5.4.1",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/webticker-3.0.0.tgz_1468726570267_0.4619906949810684"
+  },
+  "_npmUser": {
+    "email": "jon@maze.digital",
+    "name": "mazedigital"
+  },
+  "_npmVersion": "3.7.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "webticker",
+    "raw": "webticker",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/webticker/-/webticker-3.0.0.tgz",
+  "_shasum": "42e7de9c5c6cb92670df069b32a7067086279915",
+  "_shrinkwrap": null,
+  "_spec": "webticker",
+  "_where": "/opt/lampp/htdocs/sucofindo/assets/admin/plugins",
+  "author": {
+    "email": "jon@maze.digital",
+    "name": "Jonathan Mifsud",
+    "url": "http://maze.digital"
+  },
+  "bugs": {
+    "url": "https://github.com/mazedigital/Web-Ticker/issues"
+  },
+  "dependencies": {},
+  "description": "JQuery Web Ticker",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.2",
+    "jshint": "^2.9.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "42e7de9c5c6cb92670df069b32a7067086279915",
+    "tarball": "https://registry.npmjs.org/webticker/-/webticker-3.0.0.tgz"
+  },
+  "homepage": "https://maze.digital/webticker/",
+  "keywords": [
+    "animation",
+    "ecosystem",
+    "ecosystem-jquery",
+    "horizontal",
+    "horizontal-scroll",
+    "image",
+    "image-scroll",
+    "jquery",
+    "jquery-plugin",
+    "marquee",
+    "news",
+    "news-ticker",
+    "plugin",
+    "scroll",
+    "ticker"
+  ],
+  "license": "(GPL-3.0 or Commercial see license in license.md(",
+  "main": "gulpfile.js",
+  "maintainers": [
+    {
+      "name": "mazedigital",
+      "email": "jon@maze.digital"
+    }
+  ],
+  "name": "webticker",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mazedigital/Web-Ticker.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "3.0.0"
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy-Report-Only" content="script-src 'unsafe-inline'; img-src http: https: data: blob:; style-src 'unsafe-inline'; child-src 'none'; object-src 'none'; report-uri https://tiles.services.mozilla.com/v4/links/activity-stream/csp">
+    <title>New Tab</title>
+    <link rel="icon" type="image/png" href="chrome://branding/content/icon32.png">
+    <link rel="stylesheet" href="New%20Tab_files/contentSearchUI.css">
+    <link rel="stylesheet" href="New%20Tab_files/activity-stream.css">
+  <link rel="stylesheet" type="text/css" href="New%20Tab_files/onboarding.css"><script type="text/javascript" src="New%20Tab_files/UITour-lib.js"></script><script type="text/javascript" src="New%20Tab_files/onboarding-tour-agent.js"></script></head>
+  <body class="activity-stream"><button aria-label="Firefox is all new.
+See what you can do!" id="onboarding-overlay-button" aria-haspopup="true" aria-controls="onboarding-overlay-dialog" class="onboarding-watermark onboarding-speech-bubble"><img id="onboarding-overlay-button-icon" role="presentation" src="New%20Tab_files/icon64.png"><img id="onboarding-overlay-button-watermark-icon" role="presentation" src="New%20Tab_files/watermark.svg"></button>
+    <div id="root"><div data-reactroot="" class="outer-wrapper"><main><div class="search-wrapper"><label for="newtab-search-text" class="search-label"><span class="sr-only"><span>Search the Web</span></span></label><input id="newtab-search-text" maxlength="256" placeholder="Search the Web" title="Search the Web" autocomplete="off" aria-autocomplete="true" aria-controls="searchSuggestionTable" aria-expanded="false" type="search"><button id="searchSubmit" class="search-button" title="Search"><span class="sr-only"><span>Search</span></span></button><table id="searchSuggestionTable" class="contentSearchSuggestionTable" role="presentation" hidden=""><tr class="contentSearchHeaderRow"><td class="contentSearchHeader" id="contentSearchDefaultEngineHeader"><img src="blob:null/61d8dc5f-8684-4764-ad37-9a328b5897e8">Google Search</td></tr><tr class="contentSearchSuggestionsContainer"><td class="contentSearchSuggestionsContainer"><table class="contentSearchSuggestionsList" role="listbox"></table></td></tr><table class="contentSearchOneOffsTable contentSearchSuggestionsContainer" role="group"><tr class="contentSearchHeaderRow"><td class="contentSearchHeader" id="contentSearchSearchWithHeader">Search with:</td></tr></table><button class="contentSearchSettingsButton contentSearchHeaderRow contentSearchHeader" id="contentSearchSettingsButton" aria-selected="false">Change Search Settings</button></table></div><div class="body-wrapper on"><div class="sections-list"></div></div><!-- react-empty: 14 --></main><div class="prefs-pane-wrapper"><div class="prefs-pane-button"><button class="prefs-button icon icon-settings" title="Customize your New Tab page"></button></div><div class="prefs-pane"><div class="sidebar hidden"><div class="prefs-modal-inner-wrapper"><h1><span>New Tab Preferences</span></h1><p><span>Choose what you see on this page.</span></p><section><input id="showSearch" name="showSearch" class="showSearch" value="on" checked="checked" type="checkbox"><label for="showSearch"><span>Search</span></label><p class="prefs-input-description"><span>Search the Web from your new tab.</span></p></section><hr><section><input id="showTopSites" name="showTopSites" class="showTopSites" value="on" type="checkbox"><label for="showTopSites"><span>Top Sites</span></label><p class="prefs-input-description"><span>Access the websites you visit most.</span></p><div class="options disabled"><section><input id="topSitesCount" name="topSitesCount" disabled="disabled" class="showMoreTopSites" value="on" type="checkbox"><label for="topSitesCount" class="icon icon-topsites"><span>Show two rows</span></label></section></div></section><section><input id="feeds.section.highlights" name="feeds.section.highlights" class="showSection" value="on" type="checkbox"><label for="feeds.section.highlights"><span>Highlights</span></label><p class="prefs-input-description"><span>Find your way back to interesting things you’ve recently visited or bookmarked.</span></p></section><hr><section><input id="feeds.snippets" name="feeds.snippets" class="showSnippets" value="on" type="checkbox"><label for="feeds.snippets"><span>Snippets</span></label><p class="prefs-input-description"><span>Read short and sweet updates from Mozilla about Firefox, internet culture, and the occasional random meme.</span></p></section></div><section class="actions"><button class="done"><span>Done</span></button></section></div></div></div></div></div>
+    <div id="snippets-container">
+      <div id="snippets"></div>
+    </div>
+    <script>
+// Don't directly load the following scripts as part of html to let the page
+// finish loading to render the content sooner.
+for (const src of [
+  "chrome://browser/content/contentSearchUI.js",
+  "resource://activity-stream/vendor/react.js",
+  "resource://activity-stream/vendor/react-dom.js",
+  "resource://activity-stream/vendor/prop-types.js",
+  "resource://activity-stream/vendor/react-intl.js",
+  "resource://activity-stream/vendor/redux.js",
+  "resource://activity-stream/vendor/react-redux.js",
+  "resource://activity-stream/prerendered/en-US/activity-stream-strings.js",
+  "resource://activity-stream/data/content/activity-stream.bundle.js"
+]) {
+  // These dynamically inserted scripts by default are async, but we need them
+  // to load in the desired order (i.e., bundle last).
+  const script = document.body.appendChild(document.createElement("script"));
+  script.async = false;
+  script.src = src;
+}
+    </script><script src="New%20Tab_files/contentSearchUI.js"></script><script src="New%20Tab_files/react.js"></script><script src="New%20Tab_files/react-dom.js"></script><script src="New%20Tab_files/prop-types.js"></script><script src="New%20Tab_files/react-intl.js"></script><script src="New%20Tab_files/redux.js"></script><script src="New%20Tab_files/react-redux.js"></script><script src="New%20Tab_files/activity-stream-strings.js"></script><script src="New%20Tab_files/activity-stream.js"></script>
+  
+
+<div id="onboarding-overlay">
+      <div role="dialog" tabindex="-1" aria-labelledby="onboarding-header" id="onboarding-overlay-dialog">
+        <header id="onboarding-header">Let’s get started</header>
+        <nav>
+          <ul id="onboarding-tour-list" role="tablist"></ul>
+        </nav>
+        <footer id="onboarding-footer"><button id="onboarding-skip-tour-button" class="onboarding-action-button">Skip Tour</button></footer>
+        <button id="onboarding-overlay-close-btn" class="onboarding-close-btn" title="Close"></button>
+      </div>
+    </div></body></html>
